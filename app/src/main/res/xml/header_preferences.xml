@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        app:fragment="com.webserveis.mysubscriptions.preferences.GeneralPreferenceFragment"
+        app:icon="@drawable/ic_general_24"
+        app:key="general_header"
+        app:title="@string/pref_general_header" />
+
+    <Preference
+        app:fragment="com.webserveis.mysubscriptions.preferences.AboutPreferenceFragment"
+        app:icon="@drawable/ic_info_outline_black_24"
+        app:key="about_header"
+        app:title="@string/pref_about_header" />
+
+</PreferenceScreen>

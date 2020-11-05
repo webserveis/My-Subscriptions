@@ -1,0 +1,94 @@
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.webserveis.mysubscriptions.preferences.PreferenceAboutHeader
+        android:key="pref_app_name"
+        android:layout="@layout/preference_about_header"
+        android:persistent="false"
+        android:summary="@string/pref_about_version_title"
+        android:title="@string/app_name" />
+    <Preference
+        android:key="pref_send_feedback"
+        android:summary="@string/pref_about_send_feedback_summary"
+        android:title="@string/pref_about_send_feedback_title"
+        app:allowDividerAbove="true"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:summary="@string/pref_about_rate_app_summary"
+        android:title="@string/pref_about_rate_app_title"
+        app:iconSpaceReserved="false">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://play.google.com/store/apps/details?id=com.webserveis.mysubscriptions" />
+    </Preference>
+
+    <Preference
+        android:summary="@string/pref_about_others_apps_summary"
+        android:title="@string/pref_about_others_apps_title"
+        app:iconSpaceReserved="false">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://play.google.com/store/search?q=pub%3AWebserveis&amp;c=apps" />
+    </Preference>
+
+    <Preference
+        android:summary="@string/pref_about_license_summary"
+        android:title="@string/pref_about_license_title"
+        app:iconSpaceReserved="false">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://dev4phones.wordpress.com/licencia-de-uso/" />
+    </Preference>
+
+    <PreferenceCategory
+        android:title="@string/pref_about_dev_developer_label"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:summary="@string/pref_about_dev_twitter_summary"
+            android:title="@string/pref_about_dev_twitter_title"
+            app:iconSpaceReserved="false">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://twitter.com/webserveis" />
+        </Preference>
+
+        <Preference
+            android:summary="@string/pref_about_dev_gplay_summary"
+            android:title="@string/pref_about_dev_gplay_title"
+            app:iconSpaceReserved="false">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://play.google.com/store/apps/dev?id=8979891956711794454" />
+        </Preference>
+
+        <Preference
+            android:summary="@string/pref_about_dev_web_summary"
+            android:title="@string/pref_about_dev_web_title"
+            app:iconSpaceReserved="false">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://dev4phones.wordpress.com/tag/my-android-app/" />
+        </Preference>
+
+        <Preference
+            android:summary="@string/pref_about_dev_email_summary"
+            android:title="@string/pref_about_dev_email_title"
+            app:iconSpaceReserved="false">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="mailto://webserveis@gmail.com" />
+        </Preference>
+
+
+    </PreferenceCategory>
+
+
+    <Preference
+        android:key="pref_copyright"
+        android:layout="@layout/preference_about_footer"
+        app:allowDividerAbove="true"
+        app:iconSpaceReserved="false"
+        android:title="@string/pref_about_copyright_summary" />
+
+</androidx.preference.PreferenceScreen>

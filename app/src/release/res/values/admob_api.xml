@@ -1,0 +1,5 @@
+<resources>
+    <string name="google_ad_mob_key" templateMergeStrategy="preserve" translatable="false">change-this</string>
+    <string name="google_ad_mob_main_banner_key" templateMergeStrategy="preserve" translatable="false">change-this</string>
+    <string name="google_ad_mob_detail_banner_key" templateMergeStrategy="preserve" translatable="false">change-this</string>
+</resources>

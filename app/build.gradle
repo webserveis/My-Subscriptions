@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "com.webserveis.mysubscriptions"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 4
+        versionName "0.0.4"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        resConfigs "en"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable false
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation project(':stateLayout')
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.3.0-alpha03'
+    implementation 'com.android.support:design:29.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    implementation "androidx.preference:preference-ktx:1.1.1"
+
+    //ViewModel and LiveData
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
+
+    //Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7'
+
+    //Room Database
+    implementation "androidx.room:room-runtime:2.2.5"
+    kapt "androidx.room:room-compiler:2.2.5"
+
+    //UI
+    implementation 'io.github.kobakei:ratethisapp:1.2.0'
+    implementation 'com.github.quickpermissions:quickpermissions-kotlin:0.4.0'
+    implementation 'com.github.tiper:MaterialSpinner:1.4.2'
+    implementation "dev.sasikanth:colorsheet:1.0.1"
+
+    //ADMOB
+    implementation 'com.google.android.gms:play-services-ads:19.5.0'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
+
+
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+}

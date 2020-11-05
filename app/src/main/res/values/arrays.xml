@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sub_status_array">
+        <item>Auto renew</item>
+        <item>Manual renew</item>
+        <item>Don\`t renew</item>
+        <item>One time</item>
+    </string-array>
+
+    <string-array name="bill_period_units">
+        <item>Day(s)</item>
+        <item>Week(s)</item>
+        <item>Month(s)</item>
+        <item>Year(s)</item>
+    </string-array>
+</resources>

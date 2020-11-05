@@ -1,0 +1,5 @@
+<resources>
+    <string name="google_ad_mob_key" templateMergeStrategy="preserve" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="google_ad_mob_main_banner_key" templateMergeStrategy="preserve" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="google_ad_mob_detail_banner_key" templateMergeStrategy="preserve" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+</resources>
